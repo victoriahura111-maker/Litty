@@ -1,0 +1,185 @@
+ID,Task,Section,Priority,Parent,Done
+0.01,Replace every placeholder in site/data/site.json:,0. Launch gates — P0,P0,,false
+0.02,url → final domain (currently https://litty.netlify.app),0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.03,email → real business inbox (currently info@litty.com),0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.04,"phone, phoneDisplay → real number",0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.05,"whatsapp → international format, digits only (e.g. 2348012345678)",0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.06,address → real studio / pickup address,0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.07,"instagram, instagramHandle → confirmed account",0. Launch gates — P0,P0,Replace every placeholder in site/data/site.json:,false
+0.08,"Buy/connect a custom domain, enable HTTPS, update url, rebuild.",0. Launch gates — P0,P0,,false
+0.09,Create a brand email (orders@ or hello@) and forward it to your phone.,0. Launch gates — P0,P0,,false
+0.10,Confirm commercial settings in site.json:,0. Launch gates — P0,P0,,false
+0.11,free-shipping threshold,0. Launch gates — P0,P0,Confirm commercial settings in site.json:,false
+0.12,flat shipping fee,0. Launch gates — P0,P0,Confirm commercial settings in site.json:,false
+0.13,VAT rate,0. Launch gates — P0,P0,Confirm commercial settings in site.json:,false
+0.14,Enable Netlify form notifications for all four forms:,0. Launch gates — P0,P0,,false
+0.15,contact,0. Launch gates — P0,P0,Enable Netlify form notifications for all four forms:,false
+0.16,order-request,0. Launch gates — P0,P0,Enable Netlify form notifications for all four forms:,false
+0.17,track-order,0. Launch gates — P0,P0,Enable Netlify form notifications for all four forms:,false
+0.18,newsletter,0. Launch gates — P0,P0,Enable Netlify form notifications for all four forms:,false
+0.19,Submit each form on the deployed URL and confirm delivery.,0. Launch gates — P0,P0,,false
+0.20,Turn on Netlify spam protection (reCAPTCHA or honeypot is already present).,0. Launch gates — P0,P0,,false
+0.21,Review site/pages/policies.html with your business/legal details:,0. Launch gates — P0,P0,,false
+0.22,business/legal name and RC number (if applicable),0. Launch gates — P0,P0,Review site/pages/policies.html with your business/legal details:,false
+0.23,real address and contact email,0. Launch gates — P0,P0,Review site/pages/policies.html with your business/legal details:,false
+0.24,returns/refunds wording,0. Launch gates — P0,P0,Review site/pages/policies.html with your business/legal details:,false
+0.25,NDPR/NDPA data-processing wording matches your tools,0. Launch gates — P0,P0,Review site/pages/policies.html with your business/legal details:,false
+0.26,Add privacy-friendly analytics (Plausible/Fathom) or GA4 + consent.,0. Launch gates — P0,P0,,false
+0.27,Verify Google Search Console + submit sitemap.xml.,0. Launch gates — P0,P0,,false
+0.28,"Run node build.mjs, deploy, and smoke-test every page (see §10).",0. Launch gates — P0,P0,,false
+0.29,"Confirm old URLs redirect: /home, /home/, /home.html, /products.html, /contact.html.",0. Launch gates — P0,P0,,false
+0.30,"Confirm old root drafts (home.html, products.html, about.html, contact.html) are not deployed.",0. Launch gates — P0,P0,,false
+0.31,"Back up site/, dist/, and the deploy zip.",0. Launch gates — P0,P0,,false
+1.01,"Define a consistent look: matte charcoal backdrop, diffused window light, no harsh flash.",1. Product proof & catalogue — P1,P1,,false
+1.02,"Shot list per piece: front, texture/detail, in-hand/scale, plus one lifestyle shot.",1. Product proof & catalogue — P1,P1,,false
+1.03,Add one wide hero lifestyle image for the homepage.,1. Product proof & catalogue — P1,P1,,false
+1.04,"Add process shots: greenware, glazing, kiln, packaging.",1. Product proof & catalogue — P1,P1,,false
+1.05,Export formats:,1. Product proof & catalogue — P1,P1,,false
+1.06,"card image ~1200×1500 (4:5), WebP/AVIF",1. Product proof & catalogue — P1,P1,Export formats:,false
+1.07,"hero ~2400 px wide, WebP/AVIF",1. Product proof & catalogue — P1,P1,Export formats:,false
+1.08,thumbnail ~600 px,1. Product proof & catalogue — P1,P1,Export formats:,false
+1.09,"Use width/height, srcset, loading=""lazy"" below the fold, fetchpriority=""high"" on the hero.",1. Product proof & catalogue — P1,P1,,false
+1.10,Write descriptive alt text: product name + material + colour + context.,1. Product proof & catalogue — P1,P1,,false
+1.11,Create site/assets/images/.,1. Product proof & catalogue — P1,P1,,false
+1.12,Add an image field per product in products.json:,1. Product proof & catalogue — P1,P1,,false
+1.13,"Rebuild and confirm cards, cart lines and checkout summaries show the photo.",1. Product proof & catalogue — P1,P1,,false
+1.14,Add an images array (3–5) when product detail pages are added.,1. Product proof & catalogue — P1,P1,,false
+1.15,Add a product.html template to site/pages/ and generate /products/<slug>/.,1. Product proof & catalogue — P1,P1,,false
+1.16,"Include: gallery, price, 1 of 1 note, dimensions, weight, material, finish, care, lead time, availability, Add to Cart, Reserve on WhatsApp, shipping/returns accordion, related pieces.",1. Product proof & catalogue — P1,P1,,false
+1.17,Add Product/Offer + BreadcrumbList JSON-LD.,1. Product proof & catalogue — P1,P1,,false
+1.18,"Add unique <title>, meta description and OG image per product.",1. Product proof & catalogue — P1,P1,,false
+1.19,Link product cards and cart items to the detail page.,1. Product proof & catalogue — P1,P1,,false
+1.20,Add all product URLs to sitemap.xml.,1. Product proof & catalogue — P1,P1,,false
+1.21,Add a sold/archive state so sold pieces remain viewable.,1. Product proof & catalogue — P1,P1,,false
+1.22,"Rewrite all 36 descriptions with material, dimensions, finish, care and what makes each piece unique.",1. Product proof & catalogue — P1,P1,,false
+1.23,Remove duplicated lines such as “Timeless design with premium finish.”,1. Product proof & catalogue — P1,P1,,false
+1.24,Add 150–250 word intros to each category page.,1. Product proof & catalogue — P1,P1,,false
+1.25,Add “made in / ships from” provenance.,1. Product proof & catalogue — P1,P1,,false
+1.26,"Add care instructions (hand wash, avoid thermal shock, etc.).",1. Product proof & catalogue — P1,P1,,false
+1.27,"Add an artist name, photo and process story to the About page.",1. Product proof & catalogue — P1,P1,,false
+2.01,Replace “Secure checkout” in the promo strip with accurate wording: “No card details needed — pay after confirmation.”,2. Trust & conversion — P1,P1,,false
+2.02,"State lead time, ships from, and returns window near Add to Cart and at checkout.",2. Trust & conversion — P1,P1,,false
+2.03,Add 3–5 genuine testimonials with names/photos (with permission). Do not invent reviews.,2. Trust & conversion — P1,P1,,false
+2.04,Add an Instagram grid or UGC section.,2. Trust & conversion — P1,P1,,false
+2.05,Remove Account from the top bar until real accounts exist; use “Track order” or “Order help”.,2. Trust & conversion — P1,P1,,false
+2.06,Add a “How it works” 3-step section to the homepage (choose → request → confirm).,2. Trust & conversion — P1,P1,,false
+2.07,"Add a dedicated Custom Orders page with budget, timeline, references and a form.",2. Trust & conversion — P1,P1,,false
+2.08,"Add a Wholesale page with minimums, lead times and an enquiry form.",2. Trust & conversion — P1,P1,,false
+2.09,Add a pickup option and/or delivery estimate for Lagos.,2. Trust & conversion — P1,P1,,false
+2.10,Reduce required checkout fields; keep only what is needed to quote delivery.,2. Trust & conversion — P1,P1,,false
+2.11,Add a response-time promise (“we reply within one business day”).,2. Trust & conversion — P1,P1,,false
+2.12,Add an FAQ link next to the checkout submit button.,2. Trust & conversion — P1,P1,,false
+2.13,Add sold-out handling and a “notify me” path.,2. Trust & conversion — P1,P1,,false
+2.14,Add bundles/sets (e.g. lighter case + ash tray) to raise average order value.,2. Trust & conversion — P1,P1,,false
+2.15,Add a gift-note field (optional).,2. Trust & conversion — P1,P1,,false
+3.01,Decide the selling model:,3. Payments & operations — P1/P2,P1,,false
+3.02,Payment links (Paystack/Flutterwave) — fastest,3. Payments & operations — P1/P2,P1,Decide the selling model:,false
+3.03,Netlify Function + Paystack/Flutterwave — real cart checkout,3. Payments & operations — P1/P2,P1,Decide the selling model:,false
+3.04,Shopify Buy Button / Snipcart — managed commerce,3. Payments & operations — P1/P2,P1,Decide the selling model:,false
+3.05,Complete provider KYC/business verification and confirm fees.,3. Payments & operations — P1/P2,P1,,false
+3.06,Keep secret keys in Netlify environment variables — never in site.js.,3. Payments & operations — P1/P2,P1,,false
+3.07,Implement and test:,3. Payments & operations — P1/P2,P1,,false
+3.08,successful payment,3. Payments & operations — P1/P2,P1,Implement and test:,false
+3.09,failed/cancelled payment,3. Payments & operations — P1/P2,P1,Implement and test:,false
+3.10,refund,3. Payments & operations — P1/P2,P1,Implement and test:,false
+3.11,webhook/verification,3. Payments & operations — P1/P2,P1,Implement and test:,false
+3.12,order confirmation email,3. Payments & operations — P1/P2,P1,Implement and test:,false
+3.13,Keep WhatsApp as a first-class fallback with the prefilled cart message.,3. Payments & operations — P1/P2,P1,,false
+3.14,"Choose order management: Netlify Forms inbox, Google Sheet, Airtable or Shopify.",3. Payments & operations — P1/P2,P1,,false
+3.15,Add an auto-reply to every order request.,3. Payments & operations — P1/P2,P1,,false
+3.16,Define an inventory/sold workflow (update products.json + rebuild).,3. Payments & operations — P1/P2,P1,,false
+3.17,Connect the newsletter to MailerLite/Buttondown — Netlify Forms is not a mailing list.,3. Payments & operations — P1/P2,P1,,false
+3.18,Add a welcome email / first-access-to-drops automation.,3. Payments & operations — P1/P2,P1,,false
+3.19,Add abandoned-cart follow-up only after payments exist.,3. Payments & operations — P1/P2,P1,,false
+4.01,"List every icon in use (currently ~20: fire, inbox, key, smoking, heart, cart, search, user, etc.).",4. Performance — P1,P1,,false
+4.02,Replace Font Awesome with an inline SVG sprite (<symbol> + <use>).,4. Performance — P1,P1,,false
+4.03,Remove the Font Awesome CDN link from site/layouts/base.html.,4. Performance — P1,P1,,false
+4.04,Expected saving: ~300 KB.,4. Performance — P1,P1,,false
+4.05,Self-host Inter and Playfair Display as woff2 in site/assets/fonts/.,4. Performance — P1,P1,,false
+4.06,Add @font-face with font-display: swap.,4. Performance — P1,P1,,false
+4.07,Preload the two above-the-fold font files.,4. Performance — P1,P1,,false
+4.08,Remove the Google Fonts <link>.,4. Performance — P1,P1,,false
+4.09,Subset to Latin if the foundry allows it.,4. Performance — P1,P1,,false
+4.10,Bundle the 45 @imports into one CSS file at build time.,4. Performance — P1,P1,,false
+4.11,Remove unused design-system component/pattern files.,4. Performance — P1,P1,,false
+4.12,Purge selectors not present in the HTML/JS.,4. Performance — P1,P1,,false
+4.13,Minify the bundle.,4. Performance — P1,P1,,false
+4.14,Keep only the token/reset/utilities/theme layers actually used by legacy pages.,4. Performance — P1,P1,,false
+4.15,"Target: < 50 KB CSS, one request.",4. Performance — P1,P1,,false
+4.16,"Hash asset filenames (site.<hash>.css, site.<hash>.js) and cache for 1 year.",4. Performance — P1,P1,,false
+4.17,Preload the hero image/font.,4. Performance — P1,P1,,false
+4.18,Add an image optimization step (AVIF/WebP + responsive sizes).,4. Performance — P1,P1,,false
+4.19,"Add a CSP after self-hosting; keep X-Content-Type-Options, Referrer-Policy, Permissions-Policy.",4. Performance — P1,P1,,false
+4.20,Add a Lighthouse CI budget to catch regressions.,4. Performance — P1,P1,,false
+5.01,"Add Organization/LocalBusiness JSON-LD to the homepage (name, logo, URL, Instagram, contact).",5. SEO & content — P2,P2,,false
+5.02,Add Product/Offer schema on product detail pages.,5. SEO & content — P2,P2,,false
+5.03,Add BreadcrumbList schema.,5. SEO & content — P2,P2,,false
+5.04,Add FAQPage schema to the FAQ page.,5. SEO & content — P2,P2,,false
+5.05,Add per-page/per-product OG images.,5. SEO & content — P2,P2,,false
+5.06,Create/claim Google Business Profile if you offer pickup or local delivery.,5. SEO & content — P2,P2,,false
+5.07,Verify Search Console and submit the sitemap.,5. SEO & content — P2,P2,,false
+5.08,Add unique category and product copy (see §1).,5. SEO & content — P2,P2,,false
+5.09,Add a care guide and 2–3 journal posts — only if you can publish consistently.,5. SEO & content — P2,P2,,false
+5.10,Add internal links from guides to products.,5. SEO & content — P2,P2,,false
+5.11,Keep name/address/phone consistent everywhere (NAP).,5. SEO & content — P2,P2,,false
+5.12,"Review robots.txt, canonical URLs and noindex after the domain change.",5. SEO & content — P2,P2,,false
+5.13,Consider hreflang/multi-currency only if international demand appears.,5. SEO & content — P2,P2,,false
+6.01,Choose analytics: Plausible/Fathom (no cookie banner) or GA4 (consent required).,6. Measurement — P1,P1,,false
+6.02,Add the script and verify it loads once.,6. Measurement — P1,P1,,false
+6.03,Track these events in site.js:,6. Measurement — P1,P1,,false
+6.04,"add_to_cart (id, name, value)",6. Measurement — P1,P1,Track these events in site.js:,false
+6.05,"begin_checkout (value, items)",6. Measurement — P1,P1,Track these events in site.js:,false
+6.06,"order_request (value, items)",6. Measurement — P1,P1,Track these events in site.js:,false
+6.07,whatsapp_click,6. Measurement — P1,P1,Track these events in site.js:,false
+6.08,newsletter_signup,6. Measurement — P1,P1,Track these events in site.js:,false
+6.09,search (term),6. Measurement — P1,P1,Track these events in site.js:,false
+6.10,view_item (product pages),6. Measurement — P1,P1,Track these events in site.js:,false
+6.11,filter (category/sort),6. Measurement — P1,P1,Track these events in site.js:,false
+6.12,Create UTM conventions for Instagram bio links.,6. Measurement — P1,P1,,false
+6.13,Build a one-page dashboard: sessions → product views → carts → orders → revenue.,6. Measurement — P1,P1,,false
+6.14,Review monthly; keep/change one thing at a time.,6. Measurement — P1,P1,,false
+7.01,Add a focus trap and focus return to the search overlay and mobile drawer.,7. Accessibility & UX — P2,P2,,false
+7.02,"Add aria-current=""page"" to the active main-nav link (category nav already has it).",7. Accessibility & UX — P2,P2,,false
+7.03,"Add aria-live=""polite"" to filtered search results and cart-count updates.",7. Accessibility & UX — P2,P2,,false
+7.04,Add inline form errors with aria-describedby (native validation alone is not enough).,7. Accessibility & UX — P2,P2,,false
+7.05,Set form inputs to 16px on mobile (currently 15px triggers iOS zoom).,7. Accessibility & UX — P2,P2,,false
+7.06,Increase the wishlist button and small controls to 44px tap targets.,7. Accessibility & UX — P2,P2,,false
+7.07,Use env(safe-area-inset-bottom) for the WhatsApp float.,7. Accessibility & UX — P2,P2,,false
+7.08,Ensure the WhatsApp float never covers a primary CTA.,7. Accessibility & UX — P2,P2,,false
+7.09,"Keyboard-test the full request flow (tab, enter, escape, focus visible).",7. Accessibility & UX — P2,P2,,false
+7.10,Screen-reader test (VoiceOver/NVDA).,7. Accessibility & UX — P2,P2,,false
+7.11,Run axe/Lighthouse accessibility and fix criticals.,7. Accessibility & UX — P2,P2,,false
+7.12,"Test 360 px, 390 px, iPad, iOS Safari and Android Chrome.",7. Accessibility & UX — P2,P2,,false
+7.13,Add a visible “Skip to content” link (already present — verify).,7. Accessibility & UX — P2,P2,,false
+8.01,"Add package.json scripts: build, preview, package, check.",8. Operations & maintenance — P3,P3,,false
+8.02,Add CI: node build.mjs + link check + Lighthouse CI on every push.,8. Operations & maintenance — P3,P3,,false
+8.03,Add asset versioning/hashing (see §4).,8. Operations & maintenance — P3,P3,,false
+8.04,"If drops are frequent, add a Git-based CMS (Decap) or Airtable → JSON sync.",8. Operations & maintenance — P3,P3,,false
+8.05,Back up site/data/*.json before each drop.,8. Operations & maintenance — P3,P3,,false
+8.06,Add uptime monitoring (Netlify notifications or UptimeRobot).,8. Operations & maintenance — P3,P3,,false
+8.07,Review form spam monthly.,8. Operations & maintenance — P3,P3,,false
+8.08,Review privacy policy against actual tools (NDPR/NDPA).,8. Operations & maintenance — P3,P3,,false
+8.09,Quarterly content/photo refresh; remove sold pieces or move to archive.,8. Operations & maintenance — P3,P3,,false
+8.10,Keep dist/ and litty-netlify-site.zip fresh after every change.,8. Operations & maintenance — P3,P3,,false
+9.01,Customer accounts/login — wait until repeat-purchase data justifies it.,9. Deliberately deferred,Deferred,,false
+9.02,PWA/offline mode.,9. Deliberately deferred,Deferred,,false
+9.03,Multi-currency.,9. Deliberately deferred,Deferred,,false
+9.04,Heavy scroll animations.,9. Deliberately deferred,Deferred,,false
+9.05,A blog without a publishing cadence.,9. Deliberately deferred,Deferred,,false
+9.06,Chatbot (WhatsApp is better).,9. Deliberately deferred,Deferred,,false
+9.07,Loyalty program.,9. Deliberately deferred,Deferred,,false
+9.08,Review schema before genuine reviews exist.,9. Deliberately deferred,Deferred,,false
+9.09,Live Instagram API embed (use a curated static grid first).,9. Deliberately deferred,Deferred,,false
+10.01,node build.mjs passes with no broken links or unresolved tokens.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.02,"/, /products/, one category, /about/, /contact/, /cart/, /checkout/, /wishlist/, /account/, /track-order/, /faq/, /policies/ return 200.",10. Deploy smoke test — repeat every release,Release gate,,false
+10.03,/404.html and an unknown URL return the styled 404.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.04,"Old URLs redirect (/home, /products.html).",10. Deploy smoke test — repeat every release,Release gate,,false
+10.05,Desktop nav dropdown works; mobile drawer opens/closes; Escape works.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.06,Search returns filtered results; Clear restores the catalogue.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.07,"Add to cart, increase, decrease, remove; totals and badge update.",10. Deploy smoke test — repeat every release,Release gate,,false
+10.08,Checkout with items submits; empty checkout shows the empty state.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.09,Wishlist save/remove persists after reload.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.10,All four forms submit and arrive in the Netlify inbox.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.11,No console errors; no failed network requests.,10. Deploy smoke test — repeat every release,Release gate,,false
+10.12,"OG image, favicon, sitemap and robots load.",10. Deploy smoke test — repeat every release,Release gate,,false
+10.13,Test one real iOS and one Android device.,10. Deploy smoke test — repeat every release,Release gate,,false
