@@ -1,0 +1,7 @@
+/* Backdrop Blur Tokens */
+:root {
+  --blur-sm:  4px;
+  --blur-md:  8px;
+  --blur-lg:  16px;
+  --blur-xl:  24px;
+}

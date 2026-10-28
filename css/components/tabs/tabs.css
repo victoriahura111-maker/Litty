@@ -1,0 +1,9 @@
+/* Tabs — Accessible tab component */
+.tabs { display: flex; gap: var(--space-3); border-bottom: var(--border-default); }
+.tab { padding: var(--space-3) var(--space-4); font-family: var(--font-family-sans); font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); background: transparent; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color var(--motion-duration-fast) var(--motion-ease-out), border-color var(--motion-duration-fast) var(--motion-ease-out); margin-bottom: -1px; }
+.tab:hover { color: var(--color-text-primary); }
+.tab[aria-selected="true"] { color: var(--color-accent-primary); border-bottom-color: var(--color-accent-primary); }
+.tab:focus-visible { outline: var(--border-width-medium) solid var(--color-border-accent); outline-offset: -2px; border-radius: var(--radius-sm); }
+.tab[disabled] { opacity: var(--opacity-disabled); cursor: not-allowed; }
+.tab-panel[hidden] { display: none; }
+.tab-panel { padding-top: var(--space-4); }

@@ -1,0 +1,17 @@
+{
+  "name": "Litty",
+  "short_name": "Litty",
+  "description": "Handcrafted clay creations — lighter cases, ash trays, keyholders and smoke pipes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0B",
+  "theme_color": "#0B0B0B",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

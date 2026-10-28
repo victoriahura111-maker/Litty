@@ -1,0 +1,12 @@
+/* Grid Tokens */
+:root {
+  --grid-columns-1: repeat(1, 1fr);
+  --grid-columns-2: repeat(2, 1fr);
+  --grid-columns-3: repeat(3, 1fr);
+  --grid-columns-4: repeat(4, 1fr);
+  --grid-columns-5: repeat(5, 1fr);
+  --grid-columns-6: repeat(6, 1fr);
+  --grid-gap-sm: var(--space-3);
+  --grid-gap-md: var(--space-4);
+  --grid-gap-lg: var(--space-6);
+}

@@ -1,0 +1,49 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Component: Badge
+   Layer: 1 — Primitive
+   ================================================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* ── Variant: Solid (filled) ── */
+.badge--accent  { background: var(--color-accent-primary); color: var(--color-black); }
+.badge--success { background: var(--color-success); color: var(--color-black); }
+.badge--danger  { background: var(--color-danger); color: var(--color-white); }
+.badge--warning { background: var(--color-warning); color: var(--color-black); }
+.badge--info    { background: var(--color-info); color: var(--color-white); }
+.badge--neutral { background: var(--color-gray-600); color: var(--color-white); }
+
+/* ── Variant: Outline ── */
+.badge--outline-accent  { background: transparent; border: 1px solid var(--color-accent-primary); color: var(--color-accent-primary); }
+.badge--outline-success { background: transparent; border: 1px solid var(--color-success); color: var(--color-success); }
+.badge--outline-danger  { background: transparent; border: 1px solid var(--color-danger); color: var(--color-danger); }
+.badge--outline-neutral { background: transparent; border: 1px solid var(--color-gray-500); color: var(--color-text-secondary); }
+
+/* ── Variant: Dot (status indicator) ── */
+.badge--dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  gap: 0;
+  border-radius: var(--radius-full);
+}
+.badge--dot.badge--success { background: var(--color-success); }
+.badge--dot.badge--danger  { background: var(--color-danger); }
+.badge--dot.badge--warning { background: var(--color-warning); }
+.badge--dot.badge--neutral { background: var(--color-gray-500); }
+
+/* ── Size ── */
+.badge--sm { font-size: 10px; padding: 1px var(--space-1); }

@@ -1,0 +1,12 @@
+/* Hero Pattern — Primary visual statement */
+.hero { min-height: 70vh; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center; padding: var(--space-6); background: var(--color-bg-primary); position: relative; overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(215,188,232,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(215,188,232,0.05) 0%, transparent 40%); pointer-events: none; }
+.hero__content { position: relative; z-index: 2; max-width: 600px; }
+.hero__tag { display: inline-block; padding: var(--space-2) var(--space-4); background: rgba(215,188,232,0.15); border: 1px solid rgba(215,188,232,0.3); border-radius: var(--radius-full); font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider); color: var(--color-accent-primary); margin-bottom: var(--space-4); }
+.hero__title { font-family: var(--font-family-display); font-size: var(--font-size-h1); line-height: var(--line-height-tight); letter-spacing: var(--letter-spacing-tight); margin-bottom: var(--space-4); }
+.hero__subtitle { font-size: var(--font-size-lg); color: var(--color-text-secondary); margin-bottom: var(--space-5); max-width: 480px; line-height: var(--line-height-relaxed); }
+.hero__actions { display: flex; gap: var(--space-3); }
+.hero__image { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; }
+.hero__image-placeholder { width: 100%; max-width: 500px; aspect-ratio: 1; background: linear-gradient(135deg, rgba(215,188,232,0.1), rgba(215,188,232,0.05)); border: 1px solid rgba(215,188,232,0.2); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; }
+@media (max-width: 968px) { .hero { grid-template-columns: 1fr; min-height: auto; padding: var(--space-5) var(--space-3); } .hero__image { order: -1; } .hero__image-placeholder { max-width: 300px; aspect-ratio: 4/3; } }
+@media (prefers-reduced-motion: reduce) { .hero__bg { background: none; } }

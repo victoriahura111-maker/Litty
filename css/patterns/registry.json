@@ -1,0 +1,18 @@
+{
+  "name": "Litty Pattern Library",
+  "version": "1.0.0",
+  "designSystem": "Gallery Dark v1.0",
+  "lastUpdated": "2026-08-07",
+  "patterns": [
+    {"id":"PTN-HER-001","name":"Hero","category":"content","layer":2,"version":"1.0.0","status":"active","file":"hero/hero.css","components":["button","badge","icon"],"templates":["homepage"],"responsive":true},
+    {"id":"PTN-PDG-001","name":"ProductGrid","category":"commerce","layer":3,"version":"1.0.0","status":"active","file":"product-grid/product-grid.css","components":["product-card"],"templates":["products","category","wishlist"],"responsive":true},
+    {"id":"PTN-CNV-001","name":"CategoryNav","category":"navigation","layer":2,"version":"1.0.0","status":"active","file":"category-nav/category-nav.css","components":["icon"],"templates":["products","category"],"responsive":true},
+    {"id":"PTN-HDR-001","name":"Header","category":"navigation","layer":2,"version":"1.0.0","status":"active","file":"header/header.css","components":["button","icon","badge"],"templates":["all"],"responsive":true},
+    {"id":"PTN-FTR-001","name":"Footer","category":"navigation","layer":2,"version":"1.0.0","status":"active","file":"footer/footer.css","components":["icon","button","input"],"templates":["all"],"responsive":true},
+    {"id":"PTN-CHK-001","name":"Checkout","category":"commerce","layer":3,"version":"1.0.0","status":"active","file":"checkout/checkout.css","components":["form-field","input","button","cart-summary","payment-method"],"templates":["checkout"],"responsive":true},
+    {"id":"PTN-PRM-001","name":"PromoBanner","category":"marketing","layer":2,"version":"1.0.0","status":"active","file":"promo-banner/promo-banner.css","components":[],"templates":["all"],"responsive":true},
+    {"id":"PTN-NWS-001","name":"NewsletterSignup","category":"marketing","layer":2,"version":"1.0.0","status":"active","file":"newsletter/newsletter.css","components":["input","button"],"templates":["footer"],"responsive":true},
+    {"id":"PTN-WSP-001","name":"WhatsAppButton","category":"marketing","layer":2,"version":"1.0.0","status":"active","file":"whatsapp/whatsapp.css","components":["icon"],"templates":["all"],"responsive":true}
+  ],
+  "totals": {"active": 9, "deprecated": 0}
+}

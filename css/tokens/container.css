@@ -1,0 +1,8 @@
+/* Container Width Tokens */
+:root {
+  --container-default: 1280px;
+  --container-wide:    1400px;
+  --container-narrow:  960px;
+  --container-content: 680px;
+  --container-form:    600px;
+}

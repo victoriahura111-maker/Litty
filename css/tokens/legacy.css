@@ -1,0 +1,54 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Legacy Token Compatibility Layer
+   
+   These tokens preserve backward compatibility with the existing
+   implementation while the new Design System tokens are adopted.
+   
+   DEPRECATED: These aliases will be removed in v6.0.
+   Migrate to the new naming convention:
+     --bg-primary    → --color-bg-primary
+     --text-primary  → --color-text-primary
+     --accent-*      → --color-accent-*
+   ================================================================ */
+
+:root {
+  /* ── Legacy → Target Color Aliases ── */
+  --bg-primary:       var(--color-bg-primary);       /* was #0B0B0B */
+  --bg-secondary:     var(--color-bg-secondary);     /* was #1A1A1A */
+  --text-primary:     var(--color-text-primary);     /* was #FFFFFF */
+  --text-muted:       var(--color-text-secondary);   /* was #B3B3B3 */
+  --accent-primary:   var(--color-accent-primary);   /* was #D7BCE8 */
+  --accent-olive:     var(--color-accent-olive);     /* was #606C38 */
+  --accent-deep:      var(--color-accent-deep);      /* was #283618 */
+  --accent-sand:      var(--color-accent-sand);      /* was #FEFAE0 */
+  --accent-burnt:     var(--color-accent-burnt);     /* was #BC6C25 */
+  --accent-gold:      var(--color-accent-deep);      /* was #283618 — duplicate, merged */
+
+  /* ── Legacy → Target Spacing Aliases ── */
+  /* NOTE: Current 1-6 scale uses different increments than target 4px-base scale.
+     These aliases map the legacy numeric values to their actual pixel equivalents. */
+  --space-1: var(--space-2);    /* 8px  (was 8px)   */
+  --space-2: var(--space-4);    /* 16px (was 16px)  */
+  --space-3: var(--space-6);    /* 24px (was 24px)  */
+  --space-4: var(--space-8);    /* 32px (was 32px)  */
+  --space-5: var(--space-12);   /* 48px (was 48px)  */
+  --space-6: var(--space-16);   /* 64px (was 64px)  */
+
+  /* ── Legacy → Target Radius Aliases ── */
+  /* NOTE: Target radius values differ from legacy values.
+     Legacy aliases preserved for backward compatibility. */
+  --radius-legacy-sm:  6px;     /* Old --radius-sm — deprecated, use --radius-md */
+  --radius-legacy-md:  12px;    /* Old --radius-md — deprecated, use --radius-lg */
+  --radius-legacy-lg:  20px;    /* Old --radius-lg — deprecated, use --radius-xl */
+  --radius-sm:         var(--radius-legacy-sm);   /* Keep for backward compat */
+  --radius-md:         var(--radius-legacy-md);   /* Keep for backward compat */
+  --radius-lg:         var(--radius-legacy-lg);   /* Keep for backward compat */
+  --radius-pill:       var(--radius-full);        /* 999px → 9999px */
+
+  /* ── Legacy → Target Shadow Aliases ── */
+  --shadow: var(--shadow-md);   /* Keep for backward compat */
+
+  /* ── Legacy bg-tertiary (used extensively but never defined in :root) ── */
+  --bg-tertiary: var(--color-bg-tertiary);
+}

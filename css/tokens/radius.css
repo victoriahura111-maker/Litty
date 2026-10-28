@@ -1,0 +1,24 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Border Radius Tokens
+   ================================================================ */
+
+:root {
+  --radius-none:   0;
+  --radius-xs:     2px;
+  --radius-sm:     4px;
+  --radius-md:     8px;
+  --radius-lg:     12px;
+  --radius-xl:     16px;
+  --radius-2xl:    24px;
+  --radius-full:   9999px;
+
+  /* ── Component-Specific Radius ── */
+  --radius-button:   var(--radius-sm);    /* Buttons */
+  --radius-input:    var(--radius-sm);    /* Form inputs */
+  --radius-card:     var(--radius-md);    /* Cards */
+  --radius-modal:    var(--radius-lg);    /* Modals */
+  --radius-badge:    var(--radius-full);  /* Badges */
+  --radius-avatar:   var(--radius-full);  /* Avatars */
+  --radius-tag:      var(--radius-full);  /* Tags */
+}

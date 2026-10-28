@@ -1,0 +1,145 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Primitive Color Tokens
+   
+   10 color families × 11 steps (50–950) each.
+   Scale methodology: Tailwind CSS adapted for dark-first identity.
+   Step 500 is the canonical base color.
+   ================================================================ */
+
+:root {
+  /* ── Neutral / Gray Scale ── */
+  --color-gray-50:  #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #E5E5E5;
+  --color-gray-300: #B3B3B3;
+  --color-gray-400: #A3A3A3;
+  --color-gray-500: #737373;
+  --color-gray-600: #525252;
+  --color-gray-700: #404040;
+  --color-gray-800: #262626;
+  --color-gray-850: #1F1F1F;
+  --color-gray-900: #1A1A1A;
+  --color-gray-950: #0B0B0B;
+
+  /* ── Lavender Scale (Primary Accent) ── */
+  --color-lavender-50:  #F8F4FB;
+  --color-lavender-100: #F0E8F7;
+  --color-lavender-200: #E4D2F0;
+  --color-lavender-300: #D7BCE8;
+  --color-lavender-400: #C9A6DF;
+  --color-lavender-500: #D7BCE8;  /* Base — same as 300 for intentional range */
+  --color-lavender-600: #A070C4;
+  --color-lavender-700: #8550B2;
+  --color-lavender-800: #6A30A0;
+  --color-lavender-900: #4F208E;
+  --color-lavender-950: #34107C;
+
+  /* ── Olive Scale (Secondary Accent) ── */
+  --color-olive-50:  #F4F6F0;
+  --color-olive-100: #E8EDE1;
+  --color-olive-200: #D1DBC3;
+  --color-olive-300: #A3B87E;
+  --color-olive-400: #7D9957;
+  --color-olive-500: #606C38;
+  --color-olive-600: #4D562D;
+  --color-olive-700: #3A4122;
+  --color-olive-800: #272B17;
+  --color-olive-900: #1A1D0F;
+  --color-olive-950: #0D0E08;
+
+  /* ── Burnt Orange Scale (Tertiary Accent) ── */
+  --color-burnt-50:  #FDF4EC;
+  --color-burnt-100: #FBE9D9;
+  --color-burnt-200: #F6D3B3;
+  --color-burnt-300: #EDB37D;
+  --color-burnt-400: #E4944C;
+  --color-burnt-500: #BC6C25;
+  --color-burnt-600: #96561E;
+  --color-burnt-700: #714116;
+  --color-burnt-800: #4B2B0F;
+  --color-burnt-900: #2E1A09;
+  --color-burnt-950: #170D05;
+
+  /* ── Sand Scale (Warm Neutral) ── */
+  --color-sand-50:  #FFFDF5;
+  --color-sand-100: #FEFBE6;
+  --color-sand-200: #FDF7CC;
+  --color-sand-300: #FBF099;
+  --color-sand-400: #F9E966;
+  --color-sand-500: #FEFAE0;
+  --color-sand-600: #CBC8B3;
+  --color-sand-700: #989686;
+  --color-sand-800: #66645A;
+  --color-sand-900: #3D3C36;
+  --color-sand-950: #1E1E1B;
+
+  /* ── Deep Forest Scale (Dark Accent) ── */
+  --color-deep-50:  #EAEDE7;
+  --color-deep-100: #D5DBCF;
+  --color-deep-200: #ABB79F;
+  --color-deep-300: #81936F;
+  --color-deep-400: #576F3F;
+  --color-deep-500: #283618;
+  --color-deep-600: #202B13;
+  --color-deep-700: #18200E;
+  --color-deep-800: #10160A;
+  --color-deep-900: #0A0D06;
+  --color-deep-950: #050703;
+
+  /* ── Green Scale (Success) ── */
+  --color-green-50:  #F0FDF4;
+  --color-green-100: #DCFCE7;
+  --color-green-200: #BBF7D0;
+  --color-green-300: #86EFAC;
+  --color-green-400: #4ADE80;
+  --color-green-500: #4CAF50;
+  --color-green-600: #3D8B40;
+  --color-green-700: #2E6830;
+  --color-green-800: #1E4520;
+  --color-green-900: #122B14;
+  --color-green-950: #09160A;
+
+  /* ── Amber Scale (Warning) ── */
+  --color-amber-50:  #FFFBEB;
+  --color-amber-100: #FEF3C7;
+  --color-amber-200: #FDE68A;
+  --color-amber-300: #FCD34D;
+  --color-amber-400: #FBBF24;
+  --color-amber-500: #F59E0B;
+  --color-amber-600: #C47E09;
+  --color-amber-700: #935F07;
+  --color-amber-800: #623F04;
+  --color-amber-900: #3B2603;
+  --color-amber-950: #1D1301;
+
+  /* ── Red Scale (Danger / Error) ── */
+  --color-red-50:  #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-200: #FECACA;
+  --color-red-300: #FCA5A5;
+  --color-red-400: #F87171;
+  --color-red-500: #EF4444;
+  --color-red-600: #BF3636;
+  --color-red-700: #8F2929;
+  --color-red-800: #601B1B;
+  --color-red-900: #391010;
+  --color-red-950: #1D0808;
+
+  /* ── Blue Scale (Information) ── */
+  --color-blue-50:  #EFF6FF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-200: #BFDBFE;
+  --color-blue-300: #93C5FD;
+  --color-blue-400: #60A5FA;
+  --color-blue-500: #3B82F6;
+  --color-blue-600: #2F68C5;
+  --color-blue-700: #234E94;
+  --color-blue-800: #183462;
+  --color-blue-900: #0E1F3B;
+  --color-blue-950: #070F1D;
+
+  /* ── Base Colors ── */
+  --color-white: #FFFFFF;
+  --color-black: #0B0B0B;
+}

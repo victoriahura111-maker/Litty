@@ -1,0 +1,14 @@
+/* Modal — Focus-trapping overlay dialog */
+.modal-backdrop { position: fixed; inset: 0; background: var(--color-bg-overlay); z-index: var(--z-overlay-backdrop); display: flex; align-items: center; justify-content: center; padding: var(--space-4); opacity: 0; visibility: hidden; transition: opacity var(--motion-duration-moderate) var(--motion-ease-out), visibility var(--motion-duration-moderate); }
+.modal-backdrop.is-open { opacity: 1; visibility: visible; }
+.modal { position: relative; width: 100%; max-width: 560px; max-height: 85vh; background: var(--color-bg-secondary); border-radius: var(--radius-modal); box-shadow: var(--shadow-lg); z-index: var(--z-overlay); display: flex; flex-direction: column; transform: scale(0.95); opacity: 0; transition: transform var(--motion-duration-moderate) var(--motion-ease-spring), opacity var(--motion-duration-moderate) var(--motion-ease-out); }
+.modal-backdrop.is-open .modal { transform: scale(1); opacity: 1; }
+.modal__header { padding: var(--space-component-xl) var(--space-component-xl) 0; display: flex; justify-content: space-between; align-items: flex-start; }
+.modal__title { font-family: var(--font-family-display); font-size: var(--font-size-h4); color: var(--color-text-primary); }
+.modal__body { padding: var(--space-4) var(--space-component-xl); overflow-y: auto; flex: 1; color: var(--color-text-secondary); line-height: var(--line-height-relaxed); }
+.modal__footer { padding: 0 var(--space-component-xl) var(--space-component-xl); display: flex; justify-content: flex-end; gap: var(--space-3); }
+.modal__close { position: absolute; top: var(--space-4); right: var(--space-4); }
+.modal--sm { max-width: 400px; }
+.modal--lg { max-width: 720px; }
+@media (max-width: 519px) { .modal { max-width: 100%; max-height: 100vh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin-top: auto; } .modal-backdrop { align-items: flex-end; padding: 0; } }
+@media (prefers-reduced-motion: reduce) { .modal, .modal-backdrop { transition: none; } .modal-backdrop.is-open .modal { transform: none; } }

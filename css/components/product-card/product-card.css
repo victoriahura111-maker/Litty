@@ -1,0 +1,143 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Component: ProductCard
+   Layer: 2 — Foundation (extends Card)
+   ================================================================ */
+
+.product-card {
+  position: relative;
+  background: var(--color-bg-secondary);
+  border: var(--border-default);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: transform var(--motion-duration-fast) var(--motion-ease-out),
+              box-shadow var(--motion-duration-fast) var(--motion-ease-out),
+              border-color var(--motion-duration-fast) var(--motion-ease-out);
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm), var(--shadow-glow);
+  border-color: var(--color-border-strong);
+}
+
+/* ── Image ── */
+.product-card__image {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--motion-duration-moderate) var(--motion-ease-out);
+}
+.product-card:hover .product-card__image img {
+  transform: scale(1.03);
+}
+
+/* ── Badges ── */
+.product-card__badges {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  display: flex;
+  gap: var(--space-1);
+  z-index: 1;
+}
+
+/* ── Wishlist Button ── */
+.product-card__wishlist {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1;
+}
+
+/* ── Body ── */
+.product-card__body {
+  padding: var(--space-component-md);
+}
+
+/* ── Title ── */
+.product-card__title {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+  line-height: var(--line-height-snug);
+}
+
+/* ── Description ── */
+.product-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-2);
+}
+
+/* ── Price ── */
+.product-card__price {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--space-3);
+}
+.product-card__price--original {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+  margin-left: var(--space-2);
+  font-weight: var(--font-weight-regular);
+}
+
+/* ── Action ── */
+.product-card__action {
+  margin-top: auto;
+}
+
+/* ── Variant: List (horizontal) ── */
+.product-card--list {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.product-card--list .product-card__image {
+  aspect-ratio: 1;
+}
+
+/* ── Variant: Compact ── */
+.product-card--compact .product-card__body {
+  padding: var(--space-3);
+}
+.product-card--compact .product-card__title {
+  font-size: var(--font-size-base);
+}
+.product-card--compact .product-card__price {
+  font-size: var(--font-size-base);
+}
+
+/* ── State: Sold Out ── */
+.product-card--sold-out .product-card__image::after {
+  content: 'Sold Out';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11, 11, 11, 0.5);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  backdrop-filter: blur(var(--blur-sm));
+}
+.product-card--sold-out {
+  opacity: 0.7;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .product-card { transition: none; }
+  .product-card:hover { transform: none; }
+  .product-card:hover .product-card__image img { transform: none; }
+}

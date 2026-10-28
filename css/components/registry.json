@@ -1,0 +1,37 @@
+{
+  "name": "Litty Component Library",
+  "version": "1.0.0",
+  "designSystem": "Gallery Dark v1.0",
+  "lastUpdated": "2026-08-07",
+  "components": {
+    "primitives": [
+      {"id":"CMP-BTN-001","name":"Button","category":"primitive","layer":1,"version":"1.0.0","status":"active","file":"button/button.css","doc":"button/button.md","variants":["solid","outline","ghost","danger","danger-outline","icon"],"sizes":["sm","md","lg"],"states":["rest","hover","focus","active","disabled","loading"],"dependencies":["tokens"],"consumedBy":["product-card","card","modal","toast","form-field","cart-item"],"tokensUsed":25},
+      {"id":"CMP-INP-001","name":"Input","category":"primitive","layer":1,"version":"1.0.0","status":"active","file":"input/input.css","variants":["default","filled","with-icon"],"sizes":["sm","md","lg"],"states":["rest","hover","focus","disabled","error","success"],"dependencies":["tokens"],"consumedBy":["form-field"],"tokensUsed":15},
+      {"id":"CMP-BDG-001","name":"Badge","category":"primitive","layer":1,"version":"1.0.0","status":"active","file":"badge/badge.css","variants":["solid","outline","dot"],"colors":["accent","success","danger","warning","info","neutral"],"dependencies":["tokens"],"consumedBy":["product-card","header","order-timeline"],"tokensUsed":10},
+      {"id":"CMP-ICO-001","name":"Icon","category":"primitive","layer":1,"version":"1.0.0","status":"active","file":"icon/icon.css","sizes":["xs","sm","md","lg","xl","2xl"],"colors":["default","primary","accent","success","danger","warning","info"],"dependencies":["tokens"],"consumedBy":["button","product-card","header","toast","modal","empty-state"],"tokensUsed":8}
+    ],
+    "foundation": [
+      {"id":"CMP-CRD-001","name":"Card","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"card/card.css","variants":["default","interactive","featured","minimal"],"states":["rest","hover","focus","active"],"dependencies":["tokens"],"consumedBy":["product-card","stat-card","category-card"],"tokensUsed":12},
+      {"id":"CMP-PCD-001","name":"ProductCard","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"product-card/product-card.css","variants":["grid","list","featured","compact"],"states":["rest","hover","focus","sold-out"],"dependencies":["tokens","badge","icon","button"],"consumedBy":["product-grid","wishlist-grid"],"tokensUsed":20},
+      {"id":"CMP-MOD-001","name":"Modal","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"modal/modal.css","sizes":["sm","md","lg"],"states":["closed","opening","open","closing"],"dependencies":["tokens","button","icon"],"consumedBy":["quick-view","confirm-dialog"],"tokensUsed":18},
+      {"id":"CMP-TST-001","name":"Toast","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"toast/toast.css","variants":["success","error","warning","info","neutral"],"states":["entering","visible","exiting"],"dependencies":["tokens","icon","button"],"consumedBy":["cart","wishlist","checkout"],"tokensUsed":14},
+      {"id":"CMP-TAB-001","name":"Tabs","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"tabs/tabs.css","variants":["underline","pills","segmented"],"states":["rest","hover","active","focus","disabled"],"dependencies":["tokens"],"consumedBy":["account","product-detail"],"tokensUsed":12},
+      {"id":"CMP-EMP-001","name":"EmptyState","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"empty-state/empty-state.css","presets":["cart","wishlist","search","orders"],"dependencies":["tokens","icon","button"],"consumedBy":["cart","wishlist","search","orders"],"tokensUsed":10},
+      {"id":"CMP-SKE-001","name":"Skeleton","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"skeleton/skeleton.css","variants":["text","circle","rect","card"],"dependencies":["tokens"],"consumedBy":["product-grid","page-content","dashboard"],"tokensUsed":4}
+    ],
+    "business": [
+      {"id":"CMP-CRT-001","name":"CartItem","category":"business","layer":3,"version":"1.0.0","status":"active","file":"cart-item/cart-item.css","states":["rest","updating","removing"],"dependencies":["tokens","button","quantity-selector"],"consumedBy":["cart-page"],"tokensUsed":12},
+      {"id":"CMP-PRC-001","name":"Price","category":"business","layer":3,"version":"1.0.0","status":"active","file":"price/price.css","variants":["default","sale","range","accent"],"sizes":["small","default","large"],"dependencies":["tokens"],"consumedBy":["product-card","cart-item","checkout-summary"],"tokensUsed":8},
+      {"id":"CMP-ORT-001","name":"OrderTimeline","category":"business","layer":3,"version":"1.0.0","status":"active","file":"order-timeline/order-timeline.css","states":["pending","active","completed"],"dependencies":["tokens","icon"],"consumedBy":["track-order"],"tokensUsed":14},
+      {"id":"CMP-FRM-001","name":"FormField","category":"foundation","layer":2,"version":"1.0.0","status":"active","file":"form-field/form-field.css","elements":["label","input","helper","error","required"],"dependencies":["tokens","input"],"consumedBy":["checkout","contact","account","track-order"],"tokensUsed":10}
+    ]
+  },
+  "totals": {
+    "active": 15,
+    "primitives": 4,
+    "foundation": 7,
+    "business": 4,
+    "deprecated": 0,
+    "totalTokensUsed": 192
+  }
+}

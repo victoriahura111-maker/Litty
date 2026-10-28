@@ -1,0 +1,34 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Component: Price
+   Layer: 3 — Business
+   ================================================================ */
+
+.price {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.price--default { font-size: var(--font-size-xl); }
+.price--large   { font-size: var(--font-size-2xl); }
+.price--small   { font-size: var(--font-size-base); }
+
+.price--accent { color: var(--color-accent-primary); }
+
+.price--sale {
+  color: var(--color-danger);
+}
+
+.price--sale .price__original {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+  font-weight: var(--font-weight-regular);
+  margin-left: var(--space-2);
+}
+
+.price--range {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}

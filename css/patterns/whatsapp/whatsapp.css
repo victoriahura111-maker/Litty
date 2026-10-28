@@ -1,0 +1,5 @@
+/* WhatsApp Button Pattern — Fixed floating chat button */
+.whatsapp-button { position: fixed; bottom: var(--space-4); right: var(--space-4); width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--color-green-500); color: var(--color-white); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-2xl); box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform var(--motion-duration-fast) var(--motion-ease-out), box-shadow var(--motion-duration-fast) var(--motion-ease-out); z-index: var(--z-fixed); text-decoration: none; }
+.whatsapp-button:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+.whatsapp-button--pill { width: auto; height: 48px; padding: 0 var(--space-4); border-radius: var(--radius-full); gap: var(--space-2); font-size: var(--font-size-md); font-weight: var(--font-weight-semibold); }
+@media (prefers-reduced-motion: reduce) { .whatsapp-button { transition: none; } .whatsapp-button:hover { transform: none; } }

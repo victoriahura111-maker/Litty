@@ -1,0 +1,65 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Semantic Color Tokens
+   
+   Purpose-based aliases referencing primitive color tokens.
+   Dark theme is the default. Light theme overrides in themes/light.css.
+   ================================================================ */
+
+:root {
+  /* ── Background Colors ── */
+  --color-bg-primary:      var(--color-gray-950);           /* #0B0B0B — main background */
+  --color-bg-secondary:    var(--color-gray-900);           /* #1A1A1A — cards, sections */
+  --color-bg-tertiary:     var(--color-gray-850);           /* #1F1F1F — elevated surfaces */
+  --color-bg-input:        var(--color-gray-900);           /* #1A1A1A — form inputs */
+  --color-bg-overlay:      rgba(11, 11, 11, 0.6);          /* Modal/drawer backdrop */
+  --color-bg-hover:        rgba(255, 255, 255, 0.05);      /* Subtle hover background */
+  --color-bg-pressed:      rgba(255, 255, 255, 0.08);      /* Subtle pressed background */
+  --color-bg-accent:       rgba(215, 188, 232, 0.1);       /* Lavender tint background */
+  --color-bg-accent-hover: rgba(215, 188, 232, 0.15);      /* Lavender tint hover */
+
+  /* ── Text Colors ── */
+  --color-text-primary:    var(--color-white);              /* #FFFFFF — body/headings */
+  --color-text-secondary:  var(--color-gray-300);           /* #B3B3B3 — muted/secondary */
+  --color-text-tertiary:   var(--color-gray-500);           /* #737373 — placeholders */
+  --color-text-inverse:    var(--color-black);              /* #0B0B0B — text on accent */
+  --color-text-accent:     var(--color-lavender-400);       /* #C9A6DF — accent links */
+  --color-text-danger:     var(--color-red-500);            /* #EF4444 — error text */
+  --color-text-success:    var(--color-green-500);          /* #4CAF50 — success text */
+  --color-text-warning:    var(--color-amber-500);          /* #F59E0B — warning text */
+  --color-text-info:       var(--color-blue-500);           /* #3B82F6 — info text */
+
+  /* ── Border Colors ── */
+  --color-border-default:  rgba(255, 255, 255, 0.08);      /* Subtle borders */
+  --color-border-strong:   rgba(255, 255, 255, 0.15);      /* Stronger borders */
+  --color-border-accent:   var(--color-lavender-500);       /* Accent borders */
+  --color-border-danger:   var(--color-red-500);            /* Error borders */
+  --color-border-success:  var(--color-green-500);          /* Success borders */
+
+  /* ── Divider ── */
+  --color-divider:         rgba(255, 255, 255, 0.08);
+
+  /* ── Accent Colors (Semantic) ── */
+  --color-accent-primary:      var(--color-lavender-300);
+  --color-accent-primary-hover: var(--color-lavender-400);
+  --color-accent-primary-pressed: var(--color-lavender-600);
+  --color-accent-olive:        var(--color-olive-500);
+  --color-accent-deep:         var(--color-deep-500);
+  --color-accent-sand:         var(--color-sand-500);
+  --color-accent-burnt:        var(--color-burnt-500);
+
+  /* ── Status Colors (Semantic) ── */
+  --color-success:  var(--color-green-500);
+  --color-warning:  var(--color-amber-500);
+  --color-danger:   var(--color-red-500);
+  --color-info:     var(--color-blue-500);
+
+  /* ── Icon Colors ── */
+  --icon-color-default:  var(--color-gray-300);
+  --icon-color-primary:  var(--color-white);
+  --icon-color-accent:   var(--color-lavender-500);
+  --icon-color-success:  var(--color-green-500);
+  --icon-color-danger:   var(--color-red-500);
+  --icon-color-warning:  var(--color-amber-500);
+  --icon-color-info:     var(--color-blue-500);
+}

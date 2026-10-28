@@ -1,0 +1,5 @@
+/* Product Grid Pattern — Responsive product card grid */
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
+@media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); } }
+@media (max-width: 576px) { .product-grid { grid-template-columns: 1fr; } }

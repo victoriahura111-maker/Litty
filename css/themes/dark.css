@@ -1,0 +1,15 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Dark Theme (Default)
+   
+   Dark is the brand default. These values affirm the semantic
+   tokens already defined in semantic-colors.css.
+   Theme switching via [data-theme="dark"] or :root default.
+   ================================================================ */
+
+:root,
+[data-theme="dark"] {
+  /* Dark theme is the default — semantic tokens are already set.
+     This file exists for explicit theme declaration and future
+     dark theme overrides that differ from the semantic defaults. */
+}

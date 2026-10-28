@@ -1,0 +1,12 @@
+/* Icon Tokens */
+:root {
+  --size-icon-xs:  12px;
+  --size-icon-sm:  16px;
+  --size-icon-md:  20px;
+  --size-icon-lg:  24px;
+  --size-icon-xl:  32px;
+  --size-icon-2xl: 48px;
+  --icon-stroke-width: 1.5px;
+  --icon-line-cap:     round;
+  --icon-line-join:    round;
+}

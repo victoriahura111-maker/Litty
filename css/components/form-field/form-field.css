@@ -1,0 +1,6 @@
+/* FormField — Form input with label, helper, and error */
+.form-field { margin-bottom: var(--space-4); }
+.form-field__label { display: block; margin-bottom: var(--space-1); font-size: var(--font-size-label); font-weight: var(--font-weight-medium); color: var(--color-text-primary); }
+.form-field__helper { font-size: var(--font-size-error); color: var(--color-text-secondary); margin-top: var(--space-1); }
+.form-field__error { font-size: var(--font-size-error); color: var(--color-text-danger); margin-top: var(--space-1); display: flex; align-items: center; gap: var(--space-1); }
+.form-field__required { color: var(--color-danger); margin-left: 2px; }

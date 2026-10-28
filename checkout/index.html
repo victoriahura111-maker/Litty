@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout — Litty</title>
+	<meta name="description" content="Send your Litty order request with delivery details. No payment is taken online — we confirm every order by email or WhatsApp.">
+	<link rel="canonical" href="https://litty.netlify.app/checkout/">
+	<meta name="theme-color" content="#0B0B0B">
+	<meta name="robots" content="noindex, follow">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Litty">
+	<meta property="og:title" content="Checkout — Litty">
+	<meta property="og:description" content="Send your Litty order request with delivery details. No payment is taken online — we confirm every order by email or WhatsApp.">
+	<meta property="og:url" content="https://litty.netlify.app/checkout/">
+	<meta property="og:image" content="https://litty.netlify.app/assets/og-image.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Checkout — Litty">
+	<meta name="twitter:description" content="Send your Litty order request with delivery details. No payment is taken online — we confirm every order by email or WhatsApp.">
+	<meta name="twitter:image" content="https://litty.netlify.app/assets/og-image.png">
+
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/assets/site.webmanifest">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/assets/site.css">
+
+	<script type="application/json" id="site-config">{"name":"Litty","tagline":"Handcrafted Clay Creations","description":"Handcrafted clay lighter cases, ash trays, keyholders and smoke pipes. Every piece is made by hand and one of a kind.","url":"https://litty.netlify.app","email":"info@litty.com","phone":"+1234567890","phoneDisplay":"(123) 456-7890","whatsapp":"1234567890","instagram":"https://instagram.com/littyclay","instagramHandle":"@littyclay","address":["123 Clay Street","Artisan City, AC 12345"],"currency":"₦","freeShippingThreshold":75000,"shippingFee":7500,"vatRate":0.075,"featured":["premium-clay-case","classic-ash-tray","wave-design-keyholder","classic-pipe"]}</script>
+	<script type="application/json" id="product-catalog">[{"id":"premium-clay-case","name":"Premium Clay Case","price":67500,"badge":"Best Seller","description":"Handcrafted with character and durability.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"textured-design-lighter","name":"Textured Design","price":75000,"description":"Unique surface texture with premium finish.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"minimalist-case-lighter","name":"Minimalist Case","price":63000,"badge":"New","description":"Clean lines with handcrafted character.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"signature-series-lighter","name":"Signature Series","price":97500,"description":"Limited edition handcrafted design.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"classic-black","name":"Classic Black","price":72000,"badge":"Popular","description":"Timeless elegance in matte black clay.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"ocean-wave","name":"Ocean Wave","price":82500,"description":"Inspired by ocean waves, handcrafted detail.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"desert-sand","name":"Desert Sand","price":69000,"description":"Warm tones inspired by desert landscapes.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"forest-green","name":"Forest Green","price":78000,"badge":"Limited","description":"Rich green glaze with natural texture.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"midnight-blue","name":"Midnight Blue","price":73500,"description":"Deep blue with subtle shimmer finish.","category":"Lighter Cases","categorySlug":"lighter-cases","categoryName":"Lighter Cases","icon":"fa-fire"},{"id":"classic-ash-tray","name":"Classic Ash Tray","price":52500,"description":"Timeless design with premium finish.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"wave-design-ash","name":"Wave Design","price":57000,"originalPrice":67500,"badge":"Sale","description":"Artistic wave pattern, handcrafted.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"mini-tray","name":"Mini Tray","price":37500,"description":"Compact size, perfect for travel.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"artisan-series-ash","name":"Artisan Series","price":82500,"description":"One-of-a-kind handcrafted piece.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"ocean-blue-ash","name":"Ocean Blue","price":63000,"badge":"Best Seller","description":"Deep blue tones with wave texture.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"desert-sunset","name":"Desert Sunset","price":60000,"description":"Warm colors inspired by desert dusk.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"geometric-pattern","name":"Geometric Pattern","price":72000,"description":"Modern geometric design, handcrafted.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"forest-green-ash","name":"Forest Green","price":57000,"badge":"New","description":"Earthy green with natural texture.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"midnight-black-ash","name":"Midnight Black","price":54000,"description":"Sleek black with matte finish.","category":"Ash Trays","categorySlug":"ash-trays","categoryName":"Ash Trays","icon":"fa-inbox"},{"id":"classic-keyholder","name":"Classic Keyholder","price":42000,"description":"Timeless design with premium finish.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"wave-design-keyholder","name":"Wave Design","price":48000,"badge":"Best Seller","description":"Artistic wave pattern, handcrafted.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"mini-keyholder","name":"Mini Keyholder","price":33000,"description":"Compact size, perfect for everyday.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"artisan-series-keyholder","name":"Artisan Series","price":67500,"description":"One-of-a-kind handcrafted piece.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"ocean-blue-keyholder","name":"Ocean Blue","price":52500,"badge":"New","description":"Deep blue tones with wave texture.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"desert-sunset-keyholder","name":"Desert Sunset","price":49500,"description":"Warm colors inspired by desert dusk.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"geometric-pattern-keyholder","name":"Geometric Pattern","price":57000,"description":"Modern geometric design, handcrafted.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"forest-green-keyholder","name":"Forest Green","price":45000,"description":"Earthy green with natural texture.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"midnight-black-keyholder","name":"Midnight Black","price":43500,"badge":"Popular","description":"Sleek black with matte finish.","category":"Keyholders","categorySlug":"keyholders","categoryName":"Keyholders","icon":"fa-key"},{"id":"classic-pipe","name":"Classic Pipe","price":97500,"description":"Timeless design with premium finish.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"wave-design-pipe","name":"Wave Design","price":112500,"badge":"Best Seller","description":"Artistic wave pattern, handcrafted.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"mini-pipe-smoke","name":"Mini Pipe","price":82500,"description":"Compact size, perfect for travel.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"artisan-series-pipe","name":"Artisan Series","price":142500,"description":"One-of-a-kind handcrafted piece.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"ocean-blue-pipe","name":"Ocean Blue","price":108000,"badge":"New","description":"Deep blue tones with wave texture.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"desert-sunset-pipe","name":"Desert Sunset","price":105000,"description":"Warm colors inspired by desert dusk.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"geometric-pattern-pipe","name":"Geometric Pattern","price":117000,"description":"Modern geometric design, handcrafted.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"forest-green-pipe","name":"Forest Green","price":102000,"description":"Earthy green with natural texture.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"},{"id":"midnight-black-pipe","name":"Midnight Black","price":99000,"badge":"Popular","description":"Sleek black with matte finish.","category":"Smoke Pipes","categorySlug":"smoke-pipes","categoryName":"Smoke Pipes","icon":"fa-smoking"}]</script>
+</head>
+<body class="page-checkout">
+	<a class="skip-to-content" href="#main">Skip to content</a>
+	<!-- Top Bar -->
+<div class="top-bar">
+	<div class="container top-bar-inner">
+		<div class="top-bar-left">
+			<span class="top-bar-text">Free shipping on orders over ₦75,000</span>
+		</div>
+		<div class="top-bar-right">
+			<a href="/account/" class="top-bar-link"><i class="fas fa-user" aria-hidden="true"></i> Account</a>
+			<a href="/wishlist/" class="top-bar-link"><i class="fas fa-heart" aria-hidden="true"></i> Wishlist<span class="top-bar-count" data-wishlist-count hidden></span></a>
+		</div>
+	</div>
+</div>
+
+<!-- Main Header -->
+<header class="site-header">
+	<div class="container header-inner">
+		<!-- Mobile Menu -->
+		<button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+			<i class="fas fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<!-- Logo -->
+		<a href="/" class="logo" aria-label="Litty home">
+			<div class="brand-mark" aria-hidden="true">L</div>
+			<div class="logo-text">
+				<span class="logo-name">Litty</span>
+			</div>
+		</a>
+
+		<!-- Main Navigation -->
+		<nav id="main-nav" class="main-nav" aria-label="Main navigation">
+			<div class="nav-item has-dropdown">
+				<a href="/products/" class="nav-link">Shop</a>
+				<div class="nav-dropdown">
+					<div class="dropdown-grid">
+						<div class="dropdown-col">
+							<h4>Categories</h4>
+							<a href="/products/">All Products</a>
+							<a href="/products/?sort=new">New Arrivals</a>
+							<a href="/products/?sort=popular">Best Sellers</a>
+							<a href="/products/?sort=sale">Sale</a>
+						</div>
+						<div class="dropdown-col">
+							<h4>Product Types</h4>
+							<a href="/lighter-cases/">Lighter Cases</a>
+							<a href="/ash-trays/">Ash Trays</a>
+							<a href="/smoke-pipes/">Smoke Pipes</a>
+							<a href="/keyholders/">Keyholders</a>
+						</div>
+						<div class="dropdown-col dropdown-featured">
+							<h4>Featured</h4>
+							<div class="featured-product">
+								<div class="featured-img"></div>
+								<span>Handcrafted Collection</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="/" class="nav-link">Home</a>
+			<a href="/about/" class="nav-link">About</a>
+			<a href="/contact/" class="nav-link">Contact</a>
+		</nav>
+
+		<!-- Header Actions -->
+		<div class="header-actions">
+			<button class="icon-btn search-toggle" type="button" aria-label="Search" aria-expanded="false" aria-controls="search-overlay">
+				<i class="fas fa-search" aria-hidden="true"></i>
+			</button>
+			<a href="/cart/" class="icon-btn" aria-label="Shopping cart">
+				<i class="fas fa-shopping-bag" aria-hidden="true"></i>
+				<span class="cart-count" data-cart-count hidden>0</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="nav-backdrop" data-nav-backdrop hidden></div>
+
+	<!-- Search Overlay -->
+	<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search products">
+		<div class="search-container">
+			<form class="search-form" action="/products/" method="get" role="search">
+				<label class="sr-only" for="site-search">Search products</label>
+				<input type="search" id="site-search" name="q" placeholder="Search products..." autocomplete="off">
+				<button type="submit" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
+			</form>
+			<button class="search-close" type="button" aria-label="Close search"><i class="fas fa-times" aria-hidden="true"></i></button>
+		</div>
+	</div>
+</header>
+
+	<main class="main" id="main">
+		<!-- Hero Section -->
+		<section class="products-hero">
+			<div class="hero-bg"></div>
+			<div class="container">
+				<div class="products-hero-content">
+					<span class="hero-tag">Checkout</span>
+					<h1>Send Your Order</h1>
+					<p>Share your delivery details and we'll confirm availability, shipping and payment.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Checkout Section -->
+		<section class="section">
+			<div class="container">
+				<div class="order-success" data-order-success hidden>
+					<div class="success-icon" aria-hidden="true"><i class="fas fa-check"></i></div>
+					<h2>Order request sent</h2>
+					<p>Thanks! Your request <strong data-order-number></strong> is with us. We'll confirm availability, shipping and payment by email or WhatsApp within one business day.</p>
+					<p class="form-note" data-demo-note hidden>Demo mode: on Netlify this request is delivered to the Litty inbox. Locally, nothing was sent.</p>
+					<div class="actions">
+						<a href="/products/" class="btn primary">Keep Shopping</a>
+						<a class="btn whatsapp-order" href="https://wa.me/1234567890" data-order-whatsapp target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Confirm on WhatsApp</a>
+						<a href="/" class="btn outline">Back Home</a>
+					</div>
+				</div>
+
+				<div class="checkout-empty" data-checkout-empty hidden>
+					<div class="empty-icon" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
+					<h2>Your cart is empty</h2>
+					<p>Add a piece or two before sending an order request.</p>
+					<a href="/products/" class="btn primary">Browse Products</a>
+				</div>
+
+				<div class="checkout-container" data-checkout-wrap>
+					<div class="checkout-form">
+						<h2>Delivery Information</h2>
+						<form name="order-request" class="checkout-form-inner" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-checkout="true">
+							<input type="hidden" name="form-name" value="order-request">
+							<input type="hidden" name="order-summary" id="order-summary" value="">
+							<input type="hidden" name="order_reference" id="order-reference" value="">
+							<p class="hidden-field" aria-hidden="true">
+								<label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+							</p>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="first-name">First Name *</label>
+									<input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+								</div>
+								<div class="form-group">
+									<label for="last-name">Last Name *</label>
+									<input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="email">Email Address *</label>
+									<input type="email" id="email" name="email" autocomplete="email" required>
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone Number *</label>
+									<input type="tel" id="phone" name="phone" autocomplete="tel" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="address">Street Address *</label>
+								<input type="text" id="address" name="address" autocomplete="street-address" required>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="city">City *</label>
+									<input type="text" id="city" name="city" autocomplete="address-level2" required>
+								</div>
+								<div class="form-group">
+									<label for="state">State / Province *</label>
+									<input type="text" id="state" name="state" autocomplete="address-level1" required>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="zip">Postal Code</label>
+									<input type="text" id="zip" name="zip" autocomplete="postal-code">
+								</div>
+								<div class="form-group">
+									<label for="country">Country *</label>
+									<select id="country" name="country" autocomplete="country-name" required>
+										<option value="Nigeria" selected>Nigeria</option>
+										<option value="Ghana">Ghana</option>
+										<option value="Kenya">Kenya</option>
+										<option value="South Africa">South Africa</option>
+										<option value="Other">Other (we'll confirm shipping)</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="notes">Order Notes (Optional)</label>
+								<textarea id="notes" name="notes" rows="3" placeholder="Gift wrapping, delivery instructions, or anything else we should know."></textarea>
+							</div>
+
+							<h2 class="form-section-title">Payment Preference</h2>
+							<div class="payment-methods">
+								<div class="payment-method">
+									<input type="radio" id="payment-transfer" name="payment" value="Bank transfer" checked>
+									<label for="payment-transfer">
+										<span class="payment-icon"><i class="fas fa-university" aria-hidden="true"></i></span>
+										<span>Bank transfer</span>
+									</label>
+								</div>
+								<div class="payment-method">
+									<input type="radio" id="payment-delivery" name="payment" value="Pay on delivery">
+									<label for="payment-delivery">
+										<span class="payment-icon"><i class="fas fa-hand-holding" aria-hidden="true"></i></span>
+										<span>Pay on delivery</span>
+									</label>
+								</div>
+								<div class="payment-method">
+									<input type="radio" id="payment-whatsapp" name="payment" value="Discuss on WhatsApp">
+									<label for="payment-whatsapp">
+										<span class="payment-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></span>
+										<span>Discuss on WhatsApp</span>
+									</label>
+								</div>
+							</div>
+							<p class="form-note">No card details are collected on this site. We'll agree payment once your order is confirmed.</p>
+
+							<label class="checkbox-label">
+								<input type="checkbox" name="terms" required>
+								<span>I understand this is an order request and no payment has been taken. *</span>
+							</label>
+
+							<button type="submit" class="btn primary full-width">Send Order Request</button>
+							<noscript><p class="form-note">JavaScript is needed to attach your cart items to this request. Please <a href="/contact/">contact us</a> instead if you can't enable it.</p></noscript>
+							<p class="form-status" data-form-status role="status"></p>
+						</form>
+					</div>
+
+					<aside class="checkout-summary" aria-label="Order summary">
+						<h3>Order Summary</h3>
+						<div class="summary-items" data-checkout-items></div>
+
+						<div class="summary-row">
+							<span>Subtotal</span>
+							<span class="summary-value" data-subtotal>₦0</span>
+						</div>
+						<div class="summary-row">
+							<span>Shipping</span>
+							<span class="summary-value" data-shipping>₦0</span>
+						</div>
+						<div class="summary-row">
+							<span>VAT (7.5%)</span>
+							<span class="summary-value" data-vat>₦0</span>
+						</div>
+						<div class="summary-row total">
+							<span>Total</span>
+							<span class="summary-value" data-total>₦0</span>
+						</div>
+
+						<p class="shipping-note" data-shipping-note></p>
+						<a href="/cart/" class="btn outline full-width">Edit Cart</a>
+						<a class="btn whatsapp-order full-width" href="https://wa.me/1234567890" data-whatsapp-order target="_blank" rel="noopener">
+							<i class="fab fa-whatsapp" aria-hidden="true"></i> Order via WhatsApp
+						</a>
+
+						<div class="secure-checkout">
+							<i class="fas fa-lock" aria-hidden="true"></i>
+							<p>Your details are only used to fulfil your order.</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+
+		<footer class="site-footer">
+		<div class="container">
+			<div class="footer-main">
+				<div class="footer-brand">
+					<a href="/" class="footer-brand-link" aria-label="Litty home">
+						<div class="brand-mark" aria-hidden="true">L</div>
+						<h3>Litty</h3>
+					</a>
+					<p>Handcrafted Clay Creations</p>
+					<div class="footer-social">
+						<a href="https://instagram.com/littyclay" aria-label="Litty on Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://wa.me/1234567890" aria-label="Chat with Litty on WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="mailto:info@litty.com" aria-label="Email Litty"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div class="footer-links">
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<a href="/products/">All Products</a>
+						<a href="/lighter-cases/">Lighter Cases</a>
+						<a href="/ash-trays/">Ash Trays</a>
+						<a href="/keyholders/">Keyholders</a>
+						<a href="/smoke-pipes/">Smoke Pipes</a>
+					</div>
+					<div class="footer-col">
+						<h4>Company</h4>
+						<a href="/about/">About Us</a>
+						<a href="/contact/">Contact</a>
+						<a href="/faq/">FAQ</a>
+					</div>
+					<div class="footer-col">
+						<h4>Support</h4>
+						<a href="/track-order/">Track Order</a>
+						<a href="/faq/#shipping">Shipping Info</a>
+						<a href="/faq/#returns">Returns</a>
+					</div>
+					<div class="footer-col">
+						<h4>Account</h4>
+						<a href="/account/">My Account</a>
+						<a href="/wishlist/">Wishlist</a>
+						<a href="/cart/">Cart</a>
+					</div>
+				</div>
+
+				<div class="footer-newsletter">
+					<h4>Stay in the Loop</h4>
+					<p>Get updates on new drops and exclusive offers.</p>
+					<form name="newsletter" class="newsletter-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+						<input type="hidden" name="form-name" value="newsletter">
+						<p class="hidden-field" aria-hidden="true">
+							<label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+						</p>
+						<label class="sr-only" for="newsletter-email">Email address</label>
+						<input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+						<button type="submit" class="btn primary">Subscribe</button>
+					</form>
+					<p class="form-status" data-form-status role="status"></p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2026 Litty. All rights reserved.</p>
+				<div class="footer-bottom-links">
+					<a href="/policies/#privacy">Privacy Policy</a>
+					<a href="/policies/#terms">Terms of Service</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="https://wa.me/1234567890" class="whatsapp-float" title="Order on WhatsApp" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+		<i class="fab fa-whatsapp" aria-hidden="true"></i>
+	</a>
+
+	<script src="/assets/site.js" defer></script>
+
+</body>
+</html>

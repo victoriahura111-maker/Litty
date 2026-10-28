@@ -1,0 +1,74 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Component: CartItem
+   Layer: 3 — Business
+   ================================================================ */
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+  border-bottom: var(--border-default);
+  align-items: center;
+}
+
+.cart-item__image {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-bg-tertiary);
+}
+.cart-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item__details {
+  min-width: 0;
+}
+
+.cart-item__name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+  font-size: var(--font-size-base);
+}
+
+.cart-item__meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.cart-item__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.cart-item__total {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.cart-item__remove {
+  color: var(--color-text-secondary);
+  transition: color var(--motion-duration-fast) var(--motion-ease-out);
+}
+.cart-item__remove:hover {
+  color: var(--color-danger);
+}
+
+/* ── Responsive ── */
+@media (max-width: 767px) {
+  .cart-item {
+    grid-template-columns: 64px 1fr;
+  }
+  .cart-item__actions {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+  }
+}

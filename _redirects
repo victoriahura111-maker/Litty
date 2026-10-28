@@ -1,0 +1,14 @@
+# Legacy WordPress + early static URLs
+/home            /                 301
+/home/           /                 301
+/home.html       /                 301
+/about.html      /about/           301
+/contact.html    /contact/         301
+/products.html   /products/        301
+/lighter-cases.html  /lighter-cases/  301
+/ash-trays.html      /ash-trays/      301
+/keyholders.html     /keyholders/     301
+/smoke-pipes.html    /smoke-pipes/    301
+
+# Not-found fallback
+/*               /404.html         404

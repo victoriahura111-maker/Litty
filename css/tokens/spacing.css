@@ -1,0 +1,45 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Spacing Tokens
+   
+   4px base unit scale. Range: 0–32 (0px – 128px).
+   ================================================================ */
+
+:root {
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  28px;
+  --space-8:  32px;
+  --space-9:  36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+  --space-13: 52px;
+  --space-14: 56px;
+  --space-15: 60px;
+  --space-16: 64px;
+  --space-18: 72px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+
+  /* ── Semantic Spacing ── */
+  --space-page-x:          var(--space-6);      /* Page horizontal padding */
+  --space-section-sm:      var(--space-8);      /* Small section padding */
+  --space-section-md:      var(--space-12);     /* Default section padding */
+  --space-section-lg:      var(--space-16);     /* Large section padding */
+  --space-section-xl:      var(--space-24);     /* Extra large section padding */
+  --space-component-sm:    var(--space-3);      /* Compact component padding */
+  --space-component-md:    var(--space-4);      /* Default component padding */
+  --space-component-lg:    var(--space-6);      /* Spacious component padding */
+  --space-component-xl:    var(--space-8);      /* Extra spacious padding */
+  --space-nav-gap:         var(--space-8);      /* Navigation item gap */
+  --space-nav-item-x:      var(--space-4);      /* Nav item horizontal padding */
+  --space-nav-item-y:      var(--space-3);      /* Nav item vertical padding */
+}

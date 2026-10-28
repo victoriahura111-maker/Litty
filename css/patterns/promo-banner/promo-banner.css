@@ -1,0 +1,5 @@
+/* Promo Banner Pattern */
+.promo-banner { background: var(--color-bg-secondary); border-top: var(--border-default); border-bottom: var(--border-default); padding: var(--space-3) 0; }
+.promo-banner__inner { display: flex; justify-content: center; gap: var(--space-6); flex-wrap: wrap; }
+.promo-banner__text { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.promo-banner__text strong { color: var(--color-text-primary); font-weight: var(--font-weight-semibold); }

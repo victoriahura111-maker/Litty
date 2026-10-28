@@ -1,0 +1,18 @@
+/* Component Sizing Tokens */
+:root {
+  --size-touch-min:        44px;
+  --size-button-height-sm: 36px;
+  --size-button-height:    44px;
+  --size-button-height-lg: 52px;
+  --size-input-height-sm:  36px;
+  --size-input-height:     44px;
+  --size-input-height-lg:  52px;
+  --size-checkbox:         20px;
+  --size-toggle-width:     36px;
+  --size-toggle-height:    20px;
+  --size-avatar-xs:        24px;
+  --size-avatar-sm:        32px;
+  --size-avatar-md:        40px;
+  --size-avatar-lg:        56px;
+  --size-avatar-xl:        80px;
+}

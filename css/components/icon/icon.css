@@ -1,0 +1,37 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Component: Icon
+   Layer: 1 — Primitive
+   ================================================================ */
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: var(--size-icon-md);
+  height: var(--size-icon-md);
+  stroke-width: var(--icon-stroke-width);
+  stroke-linecap: var(--icon-line-cap);
+  stroke-linejoin: var(--icon-line-join);
+  fill: none;
+  vertical-align: middle;
+}
+
+/* ── Sizes ── */
+.icon--xs  { width: var(--size-icon-xs);  height: var(--size-icon-xs); }
+.icon--sm  { width: var(--size-icon-sm);  height: var(--size-icon-sm); }
+.icon--md  { width: var(--size-icon-md);  height: var(--size-icon-md); }
+.icon--lg  { width: var(--size-icon-lg);  height: var(--size-icon-lg); }
+.icon--xl  { width: var(--size-icon-xl);  height: var(--size-icon-xl); }
+.icon--2xl { width: var(--size-icon-2xl); height: var(--size-icon-2xl); }
+
+/* ── Colors ── */
+.icon--default  { stroke: var(--icon-color-default); }
+.icon--primary  { stroke: var(--icon-color-primary); }
+.icon--accent   { stroke: var(--icon-color-accent); }
+.icon--success  { stroke: var(--icon-color-success); }
+.icon--danger   { stroke: var(--icon-color-danger); }
+.icon--warning  { stroke: var(--icon-color-warning); }
+.icon--info     { stroke: var(--icon-color-info); }
+
+/* ── Filled variant ── */
+.icon--filled { fill: currentColor; }

@@ -1,0 +1,10 @@
+/* Header Pattern — Site-wide header with navigation */
+.header { position: sticky; top: 0; z-index: var(--z-sticky); height: 64px; display: flex; align-items: center; padding: 0 var(--space-page-x); background: var(--color-bg-primary); border-bottom: var(--border-default); transition: background var(--motion-duration-moderate) var(--motion-ease-out); }
+.header--transparent { background: transparent; border-bottom-color: transparent; }
+.header__nav { display: flex; align-items: center; gap: var(--space-nav-gap); margin-left: var(--space-8); }
+.header__actions { display: flex; align-items: center; gap: var(--space-3); margin-left: auto; }
+.header__cart { position: relative; }
+.header__cart-badge { position: absolute; top: -4px; right: -8px; min-width: 18px; height: 18px; padding: 0 4px; background: var(--color-accent-primary); color: var(--color-black); font-size: 11px; font-weight: var(--font-weight-bold); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; }
+.header__logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; }
+.header__logo-name { font-family: var(--font-family-display); font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); color: var(--color-text-primary); letter-spacing: var(--letter-spacing-tight); }
+@media (max-width: 1023px) { .header { height: 56px; } .header__nav { display: none; } }

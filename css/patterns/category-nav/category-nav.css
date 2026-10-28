@@ -1,0 +1,9 @@
+/* Category Navigation Pattern — Sticky horizontal category pills */
+.category-nav { background: var(--color-bg-secondary); border-bottom: var(--border-default); position: sticky; top: 0; z-index: var(--z-sticky); }
+.category-nav__inner { display: flex; justify-content: center; gap: var(--space-1); overflow-x: auto; padding: var(--space-2) 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.category-nav__inner::-webkit-scrollbar { display: none; }
+.category-nav__item { display: flex; align-items: center; gap: var(--space-2); padding: 10px 20px; color: var(--color-text-secondary); font-size: var(--font-size-md); font-weight: var(--font-weight-medium); text-decoration: none; border-radius: var(--radius-md); transition: all var(--motion-duration-fast) var(--motion-ease-out); white-space: nowrap; }
+.category-nav__item:hover { color: var(--color-text-primary); background: var(--color-bg-hover); }
+.category-nav__item--active { color: var(--color-accent-primary); background: var(--color-bg-accent); }
+.category-nav__emoji { font-size: var(--font-size-base); }
+@media (max-width: 768px) { .category-nav__item { padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); } }

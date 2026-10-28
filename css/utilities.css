@@ -1,0 +1,70 @@
+/* ================================================================
+   Litty Design System v1.0 — Gallery Dark
+   Utility Classes
+   ================================================================ */
+
+/* ── Screen Reader Only ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Skip to Content ── */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: var(--z-tooltip);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-accent-primary);
+  color: var(--color-black);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-sm);
+  transition: top var(--motion-duration-fast) var(--motion-ease-out);
+}
+
+.skip-to-content:focus {
+  top: var(--space-4);
+}
+
+/* ── Container ── */
+.container {
+  width: 100%;
+  max-width: var(--container-default);
+  margin: 0 auto;
+  padding: 0 var(--space-page-x);
+}
+
+.container--wide   { max-width: var(--container-wide); }
+.container--narrow { max-width: var(--container-narrow); }
+.container--content { max-width: var(--container-content); }
+.container--form   { max-width: var(--container-form); }
+
+/* ── Section Spacing ── */
+.section {
+  padding: var(--space-section-md) 0;
+}
+
+.section--sm { padding: var(--space-section-sm) 0; }
+.section--lg { padding: var(--space-section-lg) 0; }
+.section--xl { padding: var(--space-section-xl) 0; }
+
+/* ── Visually Hidden (but focusable) ── */
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
